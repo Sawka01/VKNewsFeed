@@ -122,8 +122,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1D5-mF-NzD" customClass="WebImageView" customModule="VKNewsFeed" customModuleProvider="target">
+                        <rect key="frame" x="9" y="112" width="356" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-m8-fcy">
-                        <rect key="frame" x="9" y="55" width="356" height="103"/>
+                        <rect key="frame" x="9" y="55" width="356" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -138,6 +142,7 @@
                 <outlet property="iconImageView" destination="E9T-so-flr" id="hwO-vX-Axm"/>
                 <outlet property="likesLabel" destination="uHE-DM-YrG" id="Hg0-fn-doe"/>
                 <outlet property="nameLabel" destination="ETc-dd-FDD" id="ux5-mo-sdu"/>
+                <outlet property="postImageView" destination="1D5-mF-NzD" id="QRe-UQ-GP9"/>
                 <outlet property="postLabel" destination="bwL-m8-fcy" id="AuJ-zw-Iqd"/>
                 <outlet property="sharesLabel" destination="S6x-be-ly1" id="f0l-Mx-jLk"/>
                 <outlet property="viewsLabel" destination="wTh-d3-Bak" id="oB2-uS-wbZ"/>
