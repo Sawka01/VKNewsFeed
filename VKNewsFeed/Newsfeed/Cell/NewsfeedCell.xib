@@ -139,7 +139,7 @@
                 <outlet property="likesLabel" destination="uHE-DM-YrG" id="Hg0-fn-doe"/>
                 <outlet property="nameLabel" destination="ETc-dd-FDD" id="ux5-mo-sdu"/>
                 <outlet property="postLabel" destination="bwL-m8-fcy" id="AuJ-zw-Iqd"/>
-                <outlet property="sharesLabel" destination="QdD-3r-U4l" id="ho2-Wg-NVd"/>
+                <outlet property="sharesLabel" destination="S6x-be-ly1" id="f0l-Mx-jLk"/>
                 <outlet property="viewsLabel" destination="wTh-d3-Bak" id="oB2-uS-wbZ"/>
             </connections>
             <point key="canvasLocation" x="107.97101449275362" y="115.84821428571428"/>
