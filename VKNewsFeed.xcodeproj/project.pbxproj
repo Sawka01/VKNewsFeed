@@ -21,6 +21,9 @@
 		FA55DA752590D177003F6DA6 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA742590D177003F6DA6 /* WebImageView.swift */; };
 		FA55DA772590F766003F6DA6 /* NewsfeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA762590F766003F6DA6 /* NewsfeedCellLayoutCalculator.swift */; };
 		FA55DA792591021E003F6DA6 /* String + Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA782591021E003F6DA6 /* String + Height.swift */; };
+		FA55DA7B259112FA003F6DA6 /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA7A259112FA003F6DA6 /* NewsfeedCodeCell.swift */; };
+		FA55DA7D2592E703003F6DA6 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA7C2592E703003F6DA6 /* Constraints.swift */; };
+		FA55DA7F2592F8B1003F6DA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA7E2592F8B1003F6DA6 /* Constants.swift */; };
 		FA706820258BE31D007FBCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70681F258BE31D007FBCE9 /* AppDelegate.swift */; };
 		FA706829258BE31F007FBCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA706828258BE31F007FBCE9 /* Assets.xcassets */; };
 		FA70682C258BE31F007FBCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA70682A258BE31F007FBCE9 /* LaunchScreen.storyboard */; };
@@ -63,6 +66,9 @@
 		FA55DA742590D177003F6DA6 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		FA55DA762590F766003F6DA6 /* NewsfeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		FA55DA782591021E003F6DA6 /* String + Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Height.swift"; sourceTree = "<group>"; };
+		FA55DA7A259112FA003F6DA6 /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
+		FA55DA7C2592E703003F6DA6 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		FA55DA7E2592F8B1003F6DA6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA70681C258BE31D007FBCE9 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA70681F258BE31D007FBCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA706828258BE31F007FBCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 			children = (
 				FA55DA7025900F6A003F6DA6 /* NewsfeedCell.swift */,
 				FA55DA762590F766003F6DA6 /* NewsfeedCellLayoutCalculator.swift */,
+				FA55DA7A259112FA003F6DA6 /* NewsfeedCodeCell.swift */,
+				FA55DA7E2592F8B1003F6DA6 /* Constants.swift */,
 				FA55DA7225900F9D003F6DA6 /* NewsfeedCell.xib */,
 			);
 			path = Cell;
@@ -189,6 +197,7 @@
 				FA706845258D6164007FBCE9 /* UIViewController + Storyboard.swift */,
 				FA55DA742590D177003F6DA6 /* WebImageView.swift */,
 				FA55DA782591021E003F6DA6 /* String + Height.swift */,
+				FA55DA7C2592E703003F6DA6 /* Constraints.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -300,6 +309,9 @@
 				FA70684A258D6427007FBCE9 /* NetworkService.swift in Sources */,
 				FA300695258EB530007CB485 /* NewsfeedModels.swift in Sources */,
 				FA55DA772590F766003F6DA6 /* NewsfeedCellLayoutCalculator.swift in Sources */,
+				FA55DA7F2592F8B1003F6DA6 /* Constants.swift in Sources */,
+				FA55DA7B259112FA003F6DA6 /* NewsfeedCodeCell.swift in Sources */,
+				FA55DA7D2592E703003F6DA6 /* Constraints.swift in Sources */,
 				FA55DA752590D177003F6DA6 /* WebImageView.swift in Sources */,
 				FA300689258EABE2007CB485 /* NetworkDataFetcher.swift in Sources */,
 				FA300693258EB530007CB485 /* NewsfeedWorker.swift in Sources */,
@@ -449,6 +461,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VKNewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +484,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = VKNewsFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
