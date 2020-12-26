@@ -15,6 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dH-hw-eVO" customClass="GradientView" customModule="VKNewsFeed" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="1" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="1" green="0.8666666666666667" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EMD-8e-74h">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -24,12 +36,16 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EMD-8e-74h" firstAttribute="leading" secondItem="OrB-hU-ffF" secondAttribute="leading" id="862-4U-fRY"/>
                             <constraint firstItem="EMD-8e-74h" firstAttribute="trailing" secondItem="OrB-hU-ffF" secondAttribute="trailing" id="9Vv-1R-ndg"/>
+                            <constraint firstAttribute="bottom" secondItem="1dH-hw-eVO" secondAttribute="bottom" id="HZg-tX-0Nj"/>
                             <constraint firstItem="EMD-8e-74h" firstAttribute="top" secondItem="5kz-uG-uUl" secondAttribute="top" id="Kjm-MB-wEG"/>
+                            <constraint firstItem="1dH-hw-eVO" firstAttribute="trailing" secondItem="OrB-hU-ffF" secondAttribute="trailing" id="kB5-vg-4v9"/>
+                            <constraint firstItem="1dH-hw-eVO" firstAttribute="top" secondItem="5kz-uG-uUl" secondAttribute="top" id="oUn-1c-URE"/>
                             <constraint firstAttribute="bottom" secondItem="EMD-8e-74h" secondAttribute="bottom" id="tcV-Mq-RG5"/>
+                            <constraint firstItem="1dH-hw-eVO" firstAttribute="leading" secondItem="OrB-hU-ffF" secondAttribute="leading" id="yyB-lb-ax4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OrB-hU-ffF"/>
                     </view>

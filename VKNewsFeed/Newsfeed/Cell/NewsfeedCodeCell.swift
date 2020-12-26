@@ -34,12 +34,19 @@ final class NewsfeedCodeCell: UITableViewCell {
         return view
     }()
 
-    let postLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.textColor = #colorLiteral(red: 0.227329582, green: 0.2323184013, blue: 0.2370472848, alpha: 1)
-        return label
+    let postLabel: UITextView = {
+        let textView = UITextView()
+        textView.font = Constants.postLabelFont
+        textView.isScrollEnabled = false
+        textView.isSelectable = true
+        textView.isUserInteractionEnabled = true
+        textView.isEditable = false
+
+        let padding = textView.textContainer.lineFragmentPadding
+        textView.textContainerInset = UIEdgeInsets.init(top: 0, left: -padding, bottom: 0, right: -padding)
+
+        textView.dataDetectorTypes = UIDataDetectorTypes.all
+        return textView
     }()
 
     let moreTextButton: UIButton = {
@@ -56,6 +63,7 @@ final class NewsfeedCodeCell: UITableViewCell {
 
     let postImageView: WebImageView = {
         let imageView = WebImageView()
+        imageView.backgroundColor = #colorLiteral(red: 0.8235294118, green: 0.3098039216, blue: 0.3294117647, alpha: 1)
         return imageView
     }()
 
@@ -212,9 +220,7 @@ final class NewsfeedCodeCell: UITableViewCell {
     }
 
     func set(viewModel: FeedCellViewModel) {
-        DispatchQueue.main.async {
-            self.iconImageView.set(imageURL: viewModel.iconUrlString)
-        }
+        iconImageView.set(imageURL: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
         postLabel.text = viewModel.text
