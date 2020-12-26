@@ -52,6 +52,8 @@ final class NewsfeedCodeCell: UITableViewCell {
         return button
     }()
 
+    let galleryCollectionView = GalleryCollectionView()
+
     let postImageView: WebImageView = {
         let imageView = WebImageView()
         return imageView
@@ -222,16 +224,23 @@ final class NewsfeedCodeCell: UITableViewCell {
         viewsLabel.text = viewModel.views
 
         postLabel.frame = viewModel.sizes.postLabelFrame
-        postImageView.frame = viewModel.sizes.attachmentFrame
         bottomView.frame = viewModel.sizes.bottomViewFrame
         moreTextButton.frame = viewModel.sizes.moreTextButtonFrame
 
-        if let photoAttachment = viewModel.photoAttachment {
+        if let photoAttachment = viewModel.photoAttachments.first, viewModel.photoAttachments.count == 1 {
             postImageView.set(imageURL: photoAttachment.photoUrlString)
             postImageView.isHidden = false
+            galleryCollectionView.isHidden = true
+            postImageView.frame = viewModel.sizes.attachmentFrame
+        } else if viewModel.photoAttachments.count > 1 {
+            galleryCollectionView.frame = viewModel.sizes.attachmentFrame
+            postImageView.isHidden = true
+            galleryCollectionView.isHidden = false
+            galleryCollectionView.set(photos: viewModel.photoAttachments)
         } else {
             postImageView.isHidden = true
-        }
+            galleryCollectionView.isHidden = true
+        } 
     }
 
     private func overlayFourthLayerOnBottomViewViews() {
@@ -335,6 +344,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         cardView.addSubview(postLabel)
         cardView.addSubview(moreTextButton)
         cardView.addSubview(postImageView)
+        cardView.addSubview(galleryCollectionView)
         cardView.addSubview(bottomView)
 
         // topView constraints
