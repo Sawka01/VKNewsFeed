@@ -14,4 +14,4 @@ The project follows the Clean Swift architecture.
 
 # Screen example
 
-![Снимок экрана 2020-12-27 в 04 53 56](https://user-images.githubusercontent.com/65301656/103161177-9c554a80-47ff-11eb-9531-86768fe9e5a1.png) | height = 200
+<img src="https://user-images.githubusercontent.com/65301656/103161177-9c554a80-47ff-11eb-9531-86768fe9e5a1.png" height="800" />
