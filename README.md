@@ -2,7 +2,7 @@
 
 This project was completed with swiftbook.ru VK News Feed App course.
 
-VKNewsFeed - application for displaying VK news feed.
+VKNewsFeed - application for displaying VK news feed with dynamic cells and a collection of images in the post.
 
 Data request occurs from the server using the VK SDK API and JSON data parsing.
 
