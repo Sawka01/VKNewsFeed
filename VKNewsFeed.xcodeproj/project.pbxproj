@@ -33,6 +33,8 @@
 		FA55DA932597F14A003F6DA6 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA922597F14A003F6DA6 /* FooterView.swift */; };
 		FA55DA952597F45D003F6DA6 /* Localizable.stringdict.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = FA55DA942597F45D003F6DA6 /* Localizable.stringdict.stringsdict */; };
 		FA55DA972597F7F9003F6DA6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55DA962597F7F9003F6DA6 /* GradientView.swift */; };
+		FA55DA9A259812BB003F6DA6 /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA55DA99259812BA003F6DA6 /* SkeletonView.framework */; };
+		FA55DA9B259812BB003F6DA6 /* SkeletonView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA55DA99259812BA003F6DA6 /* SkeletonView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA706820258BE31D007FBCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70681F258BE31D007FBCE9 /* AppDelegate.swift */; };
 		FA706829258BE31F007FBCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA706828258BE31F007FBCE9 /* Assets.xcassets */; };
 		FA70682C258BE31F007FBCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA70682A258BE31F007FBCE9 /* LaunchScreen.storyboard */; };
@@ -53,6 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA55DA9B259812BB003F6DA6 /* SkeletonView.framework in Embed Frameworks */,
 				FA706836258BE9BD007FBCE9 /* VKSdkFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -87,6 +90,7 @@
 		FA55DA922597F14A003F6DA6 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		FA55DA942597F45D003F6DA6 /* Localizable.stringdict.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringdict.stringsdict; sourceTree = "<group>"; };
 		FA55DA962597F7F9003F6DA6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FA55DA99259812BA003F6DA6 /* SkeletonView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkeletonView.framework; path = Carthage/Build/iOS/SkeletonView.framework; sourceTree = "<group>"; };
 		FA70681C258BE31D007FBCE9 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA70681F258BE31D007FBCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA706828258BE31F007FBCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA55DA9A259812BB003F6DA6 /* SkeletonView.framework in Frameworks */,
 				FA706835258BE9BD007FBCE9 /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +230,7 @@
 		FA706833258BE9BD007FBCE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA55DA99259812BA003F6DA6 /* SkeletonView.framework */,
 				FA706834258BE9BD007FBCE9 /* VKSdkFramework.framework */,
 			);
 			name = Frameworks;
@@ -342,6 +348,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SkeletonView.framework",
 			);
 			outputFileListPaths = (
 			);
