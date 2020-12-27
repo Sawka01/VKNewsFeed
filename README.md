@@ -8,7 +8,7 @@ Data request occurs from the server using the VK SDK API and JSON data parsing.
 
 The interface is created in two ways: through code and through an XIB file.
 
-VKSDK installed in Carthage.
+VK SDK installed in Carthage.
 
 The project follows the Clean Swift architecture.
 
